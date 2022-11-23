@@ -36,6 +36,17 @@ SELECT User, Host FROM mysql.user;
 CREATE USER 'someuser'@'localhost' IDENTIFIED BY 'somepassword';
 ```
 
+## Switch User
+```sql
+system mysql -u USER -p
+```
+
+## Current User
+
+```sql
+SELECT CURRENT_USER;  
+```
+
 ## Grant All Priveleges On All Databases
 
 ```sql
@@ -166,6 +177,17 @@ UPDATE users SET email = 'freddy@gmail.com' WHERE id = 2;
 ```sql
 ALTER TABLE users ADD age VARCHAR(3);
 ```
+
+## Add New Column At Particular Place
+
+```sql
+
+ALTER table table_name
+    Add column column_name57 integer AFTER column_name56;
+
+ALTER TABLE users ADD column age VARCHAR(3) AFTER email;
+```
+
 
 ## Modify Column
 
