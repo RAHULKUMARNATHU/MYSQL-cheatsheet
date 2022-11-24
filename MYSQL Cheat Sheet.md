@@ -274,6 +274,25 @@ id INT AUTO_INCREMENT,
 );
 ```
 
+## Create table with Foreign Key 
+
+```sql
+   CREATE TABLE TABLE_NAME1 (COLUMN1 REFERENCES TABLE_NAME2(COLUMN ) , COLUMN2 );
+   
+   create table course(courseId varchar(20) , courseName varchar(20) , rollno int references student(rollno);
+```
+
+
+## Foreign Key @ Created table 
+
+```sql
+   ALTER TABLE TABLE_NAME1  ADD CONSTRAINT FK FOREIGN KEY (COLUMN1 REFERENCES TABLE_NAME2(COLUMN ) , COLUMN2 );
+   
+   alter table course add constraint fk foreign key (rollno int references student(rollno);
+```
+
+
+
 ## Add Data to Posts Table
 
 ```sql
@@ -361,3 +380,5 @@ SELECT age, COUNT(age) FROM users WHERE age > 20 GROUP BY age;
 SELECT age, COUNT(age) FROM users GROUP BY age HAVING count(age) >=2;
 
 ```
+
+
