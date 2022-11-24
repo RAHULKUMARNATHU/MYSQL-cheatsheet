@@ -117,6 +117,15 @@ id INT AUTO_INCREMENT,
    register_date DATETIME,
    PRIMARY KEY(id)
 );
+
+
+## RENAME TABLE NAME
+
+```sql
+
+ALTER TABLE table_name
+RENAME TO new_table_name;
+```
 ```
 
 ## Delete / Drop Table
