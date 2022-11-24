@@ -118,6 +118,7 @@ id INT AUTO_INCREMENT,
    PRIMARY KEY(id)
 );
 
+```
 
 ## RENAME TABLE NAME
 
