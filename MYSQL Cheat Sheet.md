@@ -182,6 +182,21 @@ UPDATE users SET email = 'freddy@gmail.com' WHERE id = 2;
 
 ```
 
+## Commit : auto commit
+
+
+```sql
+select @@autocommit
+
+```
+
+```sql
+set autocommit = 0;
+--1 , 0
+-- ON , OFF
+```
+
+
 ## Add New Column
 
 ```sql
